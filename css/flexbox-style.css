@@ -1,0 +1,124 @@
+
+
+body {
+    font-family: Calibri;
+}
+
+h1 {
+    text-align: center;
+    background: rgb(197, 173, 173)
+}
+
+/* --------------Estilo dos items-------------- */
+.items {
+    /* flex: 1;   */
+    /*Necessário o flex 1 para que os itens se expandam para ocupar toda área do container*/
+	margin: 5px;
+	background: rgb(128, 240, 240);
+	text-align: center;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+}
+/* --------------Flex direction-------------- */
+.flex_direction {
+    max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+    border: 1px solid #ccc;
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+}
+
+/* --------------Flex wrap-------------- */
+.flex_wrap {
+    max-width: 100px; /*O tamanho está assim porque como as palavras do texto estão separadas, elas vão se ajustar ao máximo se houver mais espaço.*/
+	margin: 0 auto;
+	display: flex;
+    border: 1px solid #ccc;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+	/* flex-wrap: wrap; */
+	/* flex-wrap: wrap-reverse; */
+}
+
+/* --------------Flex flow-------------- */
+.flex_flow {
+    max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+    border: 1px solid #ccc;
+    /* flex-flow: row nowrap; */
+	/* flex-flow: column nowrap; */
+	/* flex-flow: row wrap; */
+}
+
+/* --------------Flex justify content (alinhamento horizontal--------------*/
+.justify {
+    min-width: 100px;
+    height: 70px; 
+}
+
+.justify_content { /*Só funciona em column se não for flex 1 ou não ocupar todo o container*/
+    max-width: 800px;
+    height: 200px;
+	margin: 0 auto;
+	display: flex;
+    border: 1px solid #ccc;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around;  */
+
+    /*Esta última propriedade cria um espaçamento entre os elementos. Os espaçamentos do meio são duas vezes maiores que o inicial e final. */
+}
+
+/* --------------Flex align items (alinhamento de acordo com o eixo--------------*/
+
+/* .items:nth-child(1) {  */
+	padding-top: 20px;
+} */
+
+.align {
+    max-width: 100px; 
+    min-width: 100px; 
+    /* height: 100px; */
+}
+.align_items {
+    max-width: 800px;
+    height: 400px;
+	margin: 0 auto;
+	display: flex;
+    border: 1px solid #ccc;
+    flex-direction: row;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+}
+
+/* --------------Flex align content (alinhamento vertical--------------*/
+/*  A propriedade só funciona se existir mais de uma linha de flex-itens. Para isso o flex-wrap precisa ser wrap. Além disso o efeito dela apenas será visualizado caso o container seja maior que a soma das linhas dos itens (precisa definir um height para o container).  */
+
+.align_content {
+    max-width: 600px;
+    height: 500px;
+	margin: 0 auto;
+	display: flex;
+    border: 1px solid #ccc;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-content: stretch; */
+	/* align-content: flex-start; */
+	/* align-content: flex-end; */
+	/* align-content: center; */
+	/* align-content: space-between; */
+	align-content: space-around;
+}
+
+Site - Flexbox Playground (flex-box constructor) - https://goo.gl/c8FwCa
